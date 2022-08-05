@@ -112,12 +112,22 @@
     <form action="https://echo.htmlacademy.ru/courses" method="post">
       
       <div>
-      <label for="date">ДАТА ЗАЕЗДА</label>
+      <label for="date">ДАТА ЗАЕЗДА:</label>
       <input type="date" name="date">
       </div>
       <div>
-      <label for="date-exit">ДАТА ВЫЕЗДА</label>
+      <label for="date-exit">ДАТА ВЫЕЗДА:</label>
       <input type="date" name="date-exit">
+      </div>
+      <div class one-third-size>
+        <label for="adults">ВЗРОСЛЫЕ:</label>
+        <button class="adults">+
+        <input type="number" id="adults" name="adults">-
+        </button>
+        <label for="kids">ДЕТИ</label>
+        <button class="kids">+
+          <input type="number" id="kids" name="kids">-
+        </button>
       </div>
       <div>
       <input type="submit" value="НАЙТИ">
@@ -130,9 +140,21 @@
   <footer class="page-footer">
     <div class="#visitSEDONA">#visitSEDONA</div>
     <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
-    <div>
-      <!-- БЛОКИ ССЫЛКИ НА СОЦСЕТИ -->
-    </div>
+    <ul class="social-icons">
+      <li><a class="social-icon-twitter" href="https://twitter.com">
+        <img src="/images/twitter1.png" width="17" height="17" alt="twitter">
+      </a></li>
+      <li>
+        <a class="social-icon-facebook" href="https://facebook.com">
+          <img src="/images/fb-icon.png" width="12" height="22" alt="facebook">
+        </a>
+      </li>
+      <li>
+        <a class="social-icon-youtube" href="https://youtube.com">
+          <img src="images/youtube.png" width="20" height="16" alt="youtube">
+        </a>
+      </li>
+      </ul>
     <div class="Website by">Website by</div>
     <div class="academy-link">
       <a href="https://htmlacademy.ru"><img src="/images/logo-htmlacademy.png" alt="логотип"></a>
