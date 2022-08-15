@@ -29,10 +29,44 @@
         </nav>
     </header>
     <main>
-        <section class="filtres">
-            <h1 class="hidden">filtres</h1>
-            <div class="background2">
-                <img src="/images/background2.png" width="1200" height="217" alt="Sedona">
+        <h1>Сайт города Седона</h1>
+        <form action="https://https://htmlacademy.ru/courses/42/run/9" method="post">
+            <p>ИНФРАСТРУКТУРА:</p>
+            <div class="pool">
+                <input type="checkbox" checked id="pool" name="pool">
+                <label for="pool">БАССЕЙН</label>
             </div>
-        </section>
+            <div class="parking">
+                <input type="checkbox" id="parking" name="parking">
+                <label for="parking">ПАРКОВКА</label>
+            </div>
+            <div class="wi-fi">
+                <input type="checkbox" id="wi-fi" name="wi-fi">
+                <label for="wi-fi">WI-FI</label>
+            </div>
+            <p>ТИП ЖИЛЬЯ:</p>
+            <div class="hotel">
+                <input type="checkbox" checked id="hotel" name="hotel">
+                <label for="hotel">ГОСТИНИЦА</label>
+            </div>
+            <div class="motel">
+                <input type="checkbox" checked id="motel" name="motel">
+                <label for="motel">МОТЕЛЬ</label>
+            </div>
+            <div class="apartman">
+                <input type="checkbox" checked id="apartman" name="apartman">
+                <label for="apartman">АПАРТАМЕНТЫ</label>
+            </div>
+            <p>СТОИМОСТЬ В СУТКИ (Р):</p>
+            <div class="numberbuttons">
+                <input type="number" id="from-0" min="0" max="3000" step="1" value="0">
+                <input type="number" id="till3000" min="0" max="3000" step="1" value="3000">
+            </div>
+            <div class="price_per_day">
+                <input type="range" id="price" name="price" min="1" max="3000" step="1">
+            </div>
+            <div class="submit">
+                <input type="submit" value="ПОКАЗАТЬ">
+            </div>
+        </form>
     </main>
