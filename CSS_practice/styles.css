@@ -6,3 +6,13 @@ body {
     line-height: 21px;
     color: black;
 }
+.welcome {
+    background: #FFFFFF url("/images/background.png") no-repeat 40px 55px;
+   width: 1200px;
+   height: 509px;
+}
+.welcome-bottom {
+    background: #FFFFFF url("/images/Shape.png") no-repeat 40px 508px;
+    width: 1200px;
+    height: 57px;
+}
