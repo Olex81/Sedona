@@ -1,18 +1,29 @@
 body {
-    font-family: 'PT Sans';
+    font-family: "PT Sans";
     font-size: 21px;
     font-style: normal;
     font-weight: 700;
     line-height: 21px;
     color: black;
 }
-.welcome {
-    background: #FFFFFF url("/images/background.png") no-repeat 40px 55px;
-   width: 1200px;
-   height: 509px;
-}
-.welcome-bottom {
-    background: #FFFFFF url("/images/Shape.png") no-repeat 40px 508px;
+
+ .welcome {
+    display: flex;
+    position: relative;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
     width: 1200px;
-    height: 57px;
+    height: 509px;
+}
+   .pic {
+    width: 456.65px;
+    height: 350.88px;
+    background-repeat: no-repeat;
+    background-position: 411.38px 132.35px;
+    position: absolute;
+   }
+.shape {
+    background-repeat: no-repeat;
+    background-position: 40px 508px;
+    position: absolute;
 }
