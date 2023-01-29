@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"name": "Sedona",
+		"path": "."
+	},
+	{
+		"path": "../Desktop/Задания"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Задания"
+  }
+}

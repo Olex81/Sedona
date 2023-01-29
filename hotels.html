@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS_practice/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="CSS_practice/styles.css" type="text/css" />
     <title>SEDONA</title>
 </head>
 
 <body>
     <header class="page-header">
-        <div><img src="/images/logo.png" width="138" height="70" alt="Sedona"></div>
+        <div><img src="/images/logo.svg" width="138" height="70" alt="Sedona"></div>
         <nav>
             <ul class="nav">
                 <li class="nav-item">
@@ -23,13 +28,13 @@
                     <a class="nav-link" href="#">КАРТА ШТАТА</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ГОСТИНИЦЫ</a>
+                    <a class="nav-link active" href="#">ГОСТИНИЦЫ</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Сайт города Седона</h1>
+        <h1 class="visually-hidden">Сайт города Седона</h1>
         <form action="https://https://htmlacademy.ru/courses/42/run/9" method="post">
             <h2>ИНФРАСТРУКТУРА:</h2>
             <div class="pool">
@@ -71,6 +76,7 @@
                 <input type="submit" value="ПОКАЗАТЬ">
             </div>
         </form>
+        <div>-+
         <h2>НАЙДЕНО: 3</h2>
         <button class="by-price">ПО ЦЕНЕ</button>
         <button class="by-type">ПО ТИПУ</button>
