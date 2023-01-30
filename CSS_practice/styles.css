@@ -1,88 +1,179 @@
 @font-face {
-    font-family: "PT Sans";
-    src: url("../Fonts/PTSans/PTSans-Regular.ttf") format("truetype");
-     font-weight: 400;
+   font-family: "PT Sans";
+   src: url("../Fonts/PTSans/PTSans-Regular.ttf") format("truetype");
+   font-weight: 400;
 }
+
 @font-face {
-    font-family: "PT Sans";
-    src: url("../Fonts/PTSans/PTSans-Bold.ttf") format("truetype");
-     font-weight: 700;
+   font-family: "PT Sans";
+   src: url("../Fonts/PTSans/PTSans-Bold.ttf") format("truetype");
+   font-weight: 700;
 }
 
 :root {
-    --main: #000000;
+   --main: #000000;
+   --white: #FFFFFF;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
 
 body {
-    font-family: "PT Sans", sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: #333333;
-    background-color: #888888;
+   font-family: "PT Sans", sans-serif;
+   font-size: 14px;
+   line-height: 21px;
+   font-weight: 400;
+   color: #333333;
+   background-color: #888888;
+}
+
+ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
 }
 
 .container {
-    background-color: #ffffff;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+   background-color: var(--white);
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
 }
 
-.nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
 .nav-link {
-    text-decoration: none;
-    font-weight: 700;
-    color: var(--main);
+   text-decoration: none;
+   font-weight: 700;
+   line-height: 26px;
+   color: var(--main);
 }
 
 .nav-link.active {
-    color: #766357;
+   color: #766357;
 }
 
- .image-wrapper {
-  width: 456px;
-  max-width: 60%;  
- }
+.image-wrapper {
+   width: 456px;
+   max-width: 60%;
+}
 
- .image-wrapper img {
-    width: 100%;
-    height: auto;
- }
+.image-wrapper img {
+   width: 100%;
+   height: auto;
+}
 
- .preview {
-    line-height: 26px;
- }
+.preview {
+   line-height: 26px;
+}
 
- .title {
-    line-height: 26px;
-    font-size: 21px;
-    color: var(--main);
- }
+.title {
+   line-height: 26px;
+   font-size: 21px;
+   font-weight: 700;
+   color: var(--main);
+}
 
- .reason-title {
-    font-size: 21px;
- }
+.reason-title {
+   font-size: 21px;
+}
 
- .welcome {
-    background-image: url("../images/background.png");
-    background-repeat: no-repeat;
- }
+.welcome {
+   background-image: url("../images/background.png");
+   background-repeat: no-repeat;
+}
+
+.photo-container {
+   color: var(--white);
+   background-color: #81B3D2;
+}
+
+
+.reason-1-wrapper {
+   background-image: url(../images/house.svg);
+   background-repeat: no-repeat;
+}
+
+.reason-2-wrapper {
+   background-image: url(../images/mountain.svg);
+   background-repeat: no-repeat;
+}
+
+.white {
+   color: var(--white);
+   line-height: 21px;
+}
+
+.form-header {
+   font-size: 30px;
+   line-height: 24px;
+   font-weight: 700;
+   color: var(--main);
+}
+
+.choose-date {
+   line-height: 24px;
+}
+
+.searching-hotels {
+   Font-family: PT Sans, sans-serif;
+   Font-size: 21px;
+   Line-height: 26px;
+   color: var(--white);
+}
+
+.form-on-the-map {
+   background-image: url(../images/map.svg);
+   background-repeat: no-repeat;
+}
+
+.parametres {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 26px;
+}
+
+.link-wrapper {
+   font-weight: 700;
+   font-size: 21px;
+   line-height: 26px;
+   color: var(--main);
+}
+
+.link-wrapper a {
+   text-decoration: none;
+   color: var(--main);
+}
+
+.choice-items {
+   background-image: url(../images/background2.png);
+   background-repeat: no-repeat;
+   color: var(--white);
+}
+
+.white-header {
+   font-size: 16px;
+   font-weight: 700;
+}
+
+.hotels-header {
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 26px;
+   color: var(--main)
+}
+
+.button {
+   font-weight: 700;
+   color: var(--white);
+}
+
