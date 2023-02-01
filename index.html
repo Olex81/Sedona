@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="CSS_practice/normalize.css" type="text/css" />
-  <link rel="stylesheet" href="CSS_practice/styles.css" type="text/css" />
+  <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
   <title>SEDONA</title>
 </head>
 
@@ -90,24 +90,27 @@
               </div>
             </div>
           </li>
-          <li>
-            <h3 class="title reason-title">небольшая площадь</h3>
-            <span>— №3 —</span>
-            <p>все достопримечательности находятся очень близко</p>
-          </li>
-          <li>
-            <h3 class="title reason-title">красивая дорога</h3>
-            <span>— №4 —</span>
-            <p>ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li>
-            <h3 class="title reason-title">мало туристов</h3>
-            <span>— №5 —</span>
-            <p>большинство едет в гранд каньон и толпится там</p>
-          </li>
+          <div class="gray_block">
+            <li>
+              <h3 class="title reason-title">небольшая площадь</h3>
+              <span>— №3 —</span>
+              <p>все достопримечательности находятся очень близко</p>
+            </li>
+            <li>
+              <h3 class="title reason-title">красивая дорога</h3>
+              <span>— №4 —</span>
+              <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+            </li>
+            <li>
+              <h3 class="title reason-title">мало туристов</h3>
+              <span>— №5 —</span>
+              <p>большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </div>
+
         </ul>
       </section>
-      
+
       <div class="form-header"><b>ЗАИНТЕРЕСОВАЛИСЬ?</b></div>
       <p class="choose-date">
         Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
@@ -117,26 +120,26 @@
         <button class="searching-hotels">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
         <form action="https://echo.htmlacademy.ru/courses" method="post">
           <div class="parametres">
-          <div>
-            <label for="date">ДАТА ЗАЕЗДА:</label>
-            <input type="date" name="date" />
-          </div>
-          <div>
-            <label for="date-exit">ДАТА ВЫЕЗДА:</label>
-            <input type="date" name="date-exit" />
-          </div>
-          <div class one-third-size>
-            <label for="adults">ВЗРОСЛЫЕ:</label>
-            <button type="button" class="adults">+</button>
-            <input type="number" id="adults" name="adults" />
-            <button type="button" class="adults">-</button>
-            <label for="kids">ДЕТИ</label>
-            <button type="button" class="kids">+</button>
-            <input type="number" id="kids" name="kids" />
-            <button type="button" class="kids">-</button>
-          </div>
-          <div>
-          </div>
+            <div>
+              <label for="date">ДАТА ЗАЕЗДА:</label>
+              <input type="date" name="date" />
+            </div>
+            <div>
+              <label for="date-exit">ДАТА ВЫЕЗДА:</label>
+              <input type="date" name="date-exit" />
+            </div>
+            <div class one-third-size>
+              <label for="adults">ВЗРОСЛЫЕ:</label>
+              <button type="button" class="adults">+</button>
+              <input type="number" id="adults" name="adults" />
+              <button type="button" class="adults">-</button>
+              <label for="kids">ДЕТИ</label>
+              <button type="button" class="kids">+</button>
+              <input type="number" id="kids" name="kids" />
+              <button type="button" class="kids">-</button>
+            </div>
+            <div>
+            </div>
             <input class="searching-hotels" type="submit" value="НАЙТИ" />
           </div>
         </form>
@@ -145,9 +148,9 @@
     </main>
     <footer class="page-footer">
       <div class="link-wrapper">
-      <div class="#visitSEDONA">#visitSEDONA</div>
-      <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
-    </div>
+        <div class="#visitSEDONA">#visitSEDONA</div>
+        <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+      </div>
       <ul class="social-icons">
         <li>
           <a class="social-icon-twitter" href="https://twitter.com">
