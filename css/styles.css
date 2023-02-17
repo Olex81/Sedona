@@ -15,6 +15,10 @@
    --white: #FFFFFF;
    --gray: #333;
    --light_gray: #888;
+   --f2: #f2f2f2;
+   --brown: #766357;
+   --blue: #81B3D2;
+   --6: #666666;
 }
 
 * {
@@ -41,7 +45,7 @@ body {
    font-weight: 400;
    text-transform: uppercase;
    color: var(--gray);
-   background-color: #f2f2f2;
+   background-color: var(--f2);
 }
 
 ul {
@@ -66,7 +70,7 @@ ul {
 }
 
 .nav-link.active {
-   color: #766357;
+   color: var(--brown);
 }
 
 .image-wrapper {
@@ -101,7 +105,7 @@ ul {
 
 .photo-container {
    color: var(--white);
-   background-color: #81B3D2;
+   background-color: var(--blue);
 }
 
 
@@ -137,11 +141,11 @@ ul {
 }
 
 .searching-hotels {
-   Font-family: PT Sans, sans-serif;
-   Font-size: 21px;
-   Line-height: 26px;
+   font-family: PT Sans, sans-serif;
+   font-size: 21px;
+   line-height: 26px;
    color: var(--white);
-   background-color: #766357;
+   background-color: var(--brown);
    text-align: center;
    border: none;
 }
@@ -171,7 +175,7 @@ ul {
 
 .choice-items {
    background-image: url(../images/background2.png);
-   background-size: contain;
+   background-size: cover;
    background-repeat: no-repeat;
    color: var(--white);
 }
@@ -191,13 +195,13 @@ ul {
 .button {
    font-weight: 700;
    color: var(--white);
-   background-color: #766357;
+   background-color: var(--brown);
    border: none;
 }
 
 .searching-hotels.blue,
 .blue {
-   background-color: #81B3D2;
+   background-color: var(--blue);
    border: none;
 }
 
@@ -206,7 +210,7 @@ input[type="date"] {
    font-size: 14px;
    line-height: 26px;
    color: var(--main);
-   background-color: #f2f2f2;
+   background-color: var(--f2);
    border: none;
    font-weight: 700;
    text-align: left;
@@ -220,14 +224,16 @@ input[type="number"] {
    font-size: 14px;
    line-height: 21px;
    color: var(--main);
-   background-color: #f2f2f2;
+   background-color: var(--f2);
    border: none;
    font-weight: 400;
 }
 
 input[type="submit"] {
    width: 458px;
-   height: 58px;
+   padding: auto;
+   outline: 2px;
+
 }
 
 .searching-hotels {
@@ -235,11 +241,6 @@ input[type="submit"] {
    height: 86px;
 }
 
-input[type="checkbox"] {
-   color: var(--white);
-   width: 23px;
-   height: 23px;
-}
 
 .button.link {
    background: none;
@@ -247,12 +248,22 @@ input[type="checkbox"] {
    font-size: 12px;
    font-weight: 400;
    line-height: 18px;
-   text-decoration: underline dotted #81B3D2;
+   text-decoration: underline dotted var(--blue);
    opacity: 30%;
 }
 
 .button.link.price {
-   color: #81B3D2;
+   color: var(--blue);
    text-decoration: none;
    opacity: 1;
+}
+
+.rating {
+   color: var(--6);
+   background-color: var(--f2);
+   outline: 2px;
+}
+
+.social-icon {
+   background-color: var(--blue);
 }
