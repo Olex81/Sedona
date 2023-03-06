@@ -19,7 +19,7 @@
         <header class="page-header">
             <div>
                 <a class="nav-link" href="/">
-                <img src="/images/logo.svg" width="138" height="70" alt="Sedona">
+                    <img src="/images/logo.svg" width="138" height="70" alt="Sedona">
                 </a>
             </div>
             <nav>
@@ -59,15 +59,18 @@
                     </div>
                     <h2 class="white-header">ТИП ЖИЛЬЯ:</h2>
                     <div class="hotel">
-                        <input type="checkbox" checked id="hotel" name="living-place" value="hotel" class="visually-hidden">
+                        <input type="checkbox" checked id="hotel" name="living-place" value="hotel"
+                            class="visually-hidden">
                         <label for="hotel">ГОСТИНИЦА</label>
                     </div>
                     <div class="motel">
-                        <input type="checkbox" checked id="motel" name="living-place" value="motel" class="visually-hidden">
+                        <input type="checkbox" checked id="motel" name="living-place" value="motel"
+                            class="visually-hidden">
                         <label for="motel">МОТЕЛЬ</label>
                     </div>
                     <div class="apartman">
-                        <input type="checkbox" checked id="apartman" name="living-place" value="apartman" class="visually-hidden">
+                        <input type="checkbox" checked id="apartman" name="living-place" value="apartman"
+                            class="visually-hidden">
                         <label for="apartman">АПАРТАМЕНТЫ</label>
                     </div>
                     <h2 class="white-header">СТОИМОСТЬ В СУТКИ (Р):</h2>
@@ -78,10 +81,10 @@
                         <input type="number" id="till3000" min="0" max="3000" step="1" value="3000">
                     </div>
                     <div class="price_per_day">
-                        <input type="range" id="price" name="price" min="1" max="3000" step="1">
+                        <input class="range" type="range" id="price" name="price" min="1" max="3000" step="1">
                     </div>
                     <div class="submit">
-                        <input type="submit" value="ПОКАЗАТЬ">
+                        <input class="show" type="submit" value="ПОКАЗАТЬ">
                     </div>
                 </form>
             </section>
@@ -90,6 +93,19 @@
                 <a class="button link price" href="#">ПО ЦЕНЕ</a>
                 <a class="button link" href="#">ПО ТИПУ</a>
                 <a class="button link" href="#">ПО РЕЙТИНГУ</a>
+                <a class="arrow-up-link" href="#">
+                    <svg class="arrow-up-icon" width="11" height="10" viewBox="0 0 11 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
+                    </svg>
+                </a>
+
+                <a class="arrow-down-link" href="#">
+                    <svg class="arrow-down-icon" width="11" height="10" viewBox="0 0 11 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 10L0 0H11" fill="#81B3D2" />
+                    </svg>
+                </a>
             </div>
             <h2 class="visually-hidden">HOTELS</h2>
             <ul class="living-places">
@@ -99,6 +115,12 @@
                     </div>
 
                     <h3 class="hotels-header">Amara Resort & Spa</h3>
+                    <div class="stars-img-group">
+                        <img src="images/star.svg" alt="рейтинг отеля 4 из 5">
+                        <img src="images/star.svg">
+                        <img src="images/star.svg">
+                        <img src="images/star.svg">
+                    </div>
                     <p>ГОСТИНИЦА</p>
                     <p>ОТ 4000 Р.</p>
                     <button class="button blue">ПОДРОБНЕЕ</button>
@@ -110,6 +132,9 @@
                         <img src="/images/ROad.png" alt="Road">
                     </div>
                     <h3 class="hotels-header">Desert Quail Inn</h3>
+                    <img src="images/star.svg" alt="рейтинг отеля 3 из 5">
+                    <img src="images/star.svg">
+                    <img src="images/star.svg">
                     <p>МОТЕЛЬ</p>
                     <p>ОТ 3000 Р.</p>
                     <button class="button blue">ПОДРОБНЕЕ</button>
@@ -121,6 +146,8 @@
                         <img src="/images/Nature.png" alt="Nature">
                     </div>
                     <h3 class="hotels-header">Villas at Poco Diablo</h3>
+                    <img src="images/star.svg" alt="рейтинг отеля 2 из 5">
+                    <img src="images/star.svg">
                     <p>АПАРТАМЕНТЫ</p>
                     <p>ОТ 2000 Р.</p>
                     <button class="button blue">ПОДРОБНЕЕ</button>
