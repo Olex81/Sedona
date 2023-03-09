@@ -117,39 +117,39 @@
         гостиниц в седоне
       </p>
       <section class="form-on-the-map">
-        
 
-        <button class="searching-hotels">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-
+        <div class="brown-btn">
+          <button class="searching-hotels brown-btn">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        </div>
 
         <form action="https://echo.htmlacademy.ru/courses" method="post">
           <fieldset class="form-group">
-          <div class="parametres">
-            <div>
-              <label for="date">ДАТА ЗАЕЗДА:</label>
-              <input type="date" name="date" class="" />
+            <div class="parametres">
+              <div class="date-input">
+                <label for="date">ДАТА ЗАЕЗДА:</label>
+                <input type="date" name="date" class="" />
+              </div>
+              <div class="date-input">
+                <label for="date-exit">ДАТА ВЫЕЗДА:</label>
+                <input type="date" name="date-exit" />
+              </div>
+              <div class="one-third-size">
+                <label for="adults">ВЗРОСЛЫЕ:</label>
+                <button type="button" class="adults">+</button>
+                <input type="number" id="adults" name="adults" />
+                <button type="button" class="adults">-</button>
+                <label for="kids">ДЕТИ</label>
+                <button type="button" class="kids">+</button>
+                <input type="number" id="kids" name="kids" />
+                <button type="button" class="kids">-</button>
+              </div>
+              <div>
+              </div>
+              <input class="searching-hotels blue" type="submit" value="НАЙТИ" />
             </div>
-            <div>
-              <label for="date-exit">ДАТА ВЫЕЗДА:</label>
-              <input type="date" name="date-exit" />
-            </div>
-            <div class one-third-size>
-              <label for="adults">ВЗРОСЛЫЕ:</label>
-              <button type="button" class="adults">+</button>
-              <input type="number" id="adults" name="adults" />
-              <button type="button" class="adults">-</button>
-              <label for="kids">ДЕТИ</label>
-              <button type="button" class="kids">+</button>
-              <input type="number" id="kids" name="kids" />
-              <button type="button" class="kids">-</button>
-            </div>
-            <div>
-            </div>
-            <input class="searching-hotels blue" type="submit" value="НАЙТИ" />
-          </div>
           </fieldset>
         </form>
-      
+
       </section>
     </main>
     <footer class="page-footer">

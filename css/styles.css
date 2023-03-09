@@ -215,6 +215,17 @@ ul {
    border: none;
 }
 
+.searching-hotels.blue {
+   margin-top: 0;
+   width: 100%;
+   max-width: ;
+   : 458px;
+   height: 58px;
+}
+
+.brown-btn {
+   margin: 0 auto;
+}
 
 input[type="date"] {
    font-size: 14px;
@@ -225,7 +236,8 @@ input[type="date"] {
    font-weight: 700;
    text-align: left;
    vertical-align: center;
-   width: 346px;
+   width: 100%;
+   max-width: 346px;
    height: 38px;
 
 }
@@ -240,14 +252,26 @@ input[type="number"] {
 }
 
 input[type="submit"] {
-   width: 458px;
+   width: 100%;
+   max-width: 458px;
    padding: auto;
    outline: 2px;
 
 }
 
+.date-input {
+   margin-top: 0;
+   margin-bottom: 30px;
+}
+
+.one-third-size {
+   margin-top: 0;
+   margin-bottom: 54px;
+}
+
 .searching-hotels {
-   width: 568px;
+   width: 100%;
+   max-width: 568px;
    height: 86px;
 }
 
@@ -298,5 +322,12 @@ input[type="submit"] {
 }
 
 .form-group {
-   border: #000;
+   margin: 0 auto;
+   padding: 55px;
+   background-color: var(--white);
+   width: 100%;
+   max-width: 568px;
+   height: 395px;
+   border: none;
+   filter: drop-shadow(0 7px 15px rgba(0, 1, 1, 0.15));
 }
