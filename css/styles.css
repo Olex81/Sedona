@@ -61,6 +61,22 @@ ul {
    margin: 0 auto;
 }
 
+.nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   max-width: 1200px;
+   height: 56px;
+}
+
+.logo {
+   top: 0;
+   position: absolute;
+   z-index: 1;
+   left: 50%;
+}
+
 
 .nav-link {
    text-decoration: none;
@@ -218,8 +234,7 @@ ul {
 .searching-hotels.blue {
    margin-top: 0;
    width: 100%;
-   max-width: ;
-   : 458px;
+   max-width: 458px;
    height: 58px;
 }
 
