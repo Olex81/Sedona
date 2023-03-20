@@ -75,6 +75,7 @@ ul {
    position: absolute;
    z-index: 1;
    left: 50%;
+   transform: translateX(-50%);
 }
 
 
@@ -167,7 +168,7 @@ ul {
 }
 
 .searching-hotels {
-   font-family: PT Sans, sans-serif;
+   font-family: "PT Sans", sans-serif;
    font-size: 21px;
    line-height: 26px;
    color: var(--white);
@@ -176,10 +177,10 @@ ul {
    border: none;
 }
 
-.form-on-the-map {
+/* .form-on-the-map {
    background-image: url(../images/map.svg);
    background-repeat: no-repeat;
-}
+} */
 
 .parametres {
    font-weight: 700;
@@ -219,10 +220,30 @@ ul {
 }
 
 .button {
+   padding: 3px 17px;
    font-weight: 700;
    color: var(--white);
    background-color: var(--brown);
    border: none;
+   transition: 0.3s;
+}
+
+.button.blue.btn:hover {
+   background-color: #669EC0;
+}
+
+.button.blue.btn:active {
+   opacity: 30%;
+   background-color: #5496BD;
+}
+
+.button.btn:hover {
+   background-color: #604E43;
+}
+
+.button.btn:active {
+   opacity: 30%;
+   background-color: #503E33;
 }
 
 .searching-hotels.blue,
@@ -235,7 +256,8 @@ ul {
    margin-top: 0;
    width: 100%;
    max-width: 458px;
-   height: 58px;
+   min-height: 58px;
+   padding: 16px 182px;
 }
 
 .brown-btn {
@@ -287,9 +309,27 @@ input[type="submit"] {
 .searching-hotels {
    width: 100%;
    max-width: 568px;
-   height: 86px;
+   min-height: 86px;
+   padding: 30px 124px;
+   transition: 0.3s;
 }
 
+.searching-hotels:hover {
+   background-color: #604E43;
+}
+
+.searching-hotels:active {
+   color: #503E33;
+   /* opacity: 30%; */
+}
+
+.searching-hotels.blue:hover {
+   background-color: #669EC0;
+}
+
+.searching-hotels.blue:active {
+   background-color: #5496BD;
+}
 
 .button.link {
    background: none;
@@ -342,7 +382,18 @@ input[type="submit"] {
    background-color: var(--white);
    width: 100%;
    max-width: 568px;
-   height: 395px;
+   min-height: 395px;
    border: none;
    filter: drop-shadow(0 7px 15px rgba(0, 1, 1, 0.15));
+}
+
+.form-wrapper {
+   position: absolute;
+   z-index: 1;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.btn {
+   cursor: pointer;
 }
