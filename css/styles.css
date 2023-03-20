@@ -279,6 +279,16 @@ input[type="date"] {
 
 }
 
+.input.input-date:focus {
+   background-color: var(--white);
+   outline: 2px solid #E5E5E5;
+}
+
+.input.input-date:hover {
+   background-color: #EBEBEB;
+}
+
+
 input[type="number"] {
    font-size: 14px;
    line-height: 21px;
