@@ -1,5 +1,5 @@
 @font-face {
-   font-family: "PT Sans";
+   font-family: "PT sans";
    src: url("../Fonts/PTSans/PTSans-Regular.ttf") format("truetype");
    font-weight: 400;
 }
@@ -110,6 +110,10 @@ ul {
    height: auto;
 }
 
+.reasons {
+   margin-bottom: 60px;
+}
+
 .preview {
    line-height: 26px;
 }
@@ -157,17 +161,35 @@ ul {
 }
 
 .form-header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   text-transform: uppercase;
    font-size: 30px;
    line-height: 24px;
    font-weight: 700;
    color: var(--main);
 }
 
+.form-header-wrapper {
+   width: 100%;
+   max-width: 435px;
+
+}
+
 .choose-date {
+   margin: 0;
+   margin-bottom: 30px;
+   font-weight: 400;
+   font-size: 14px;
    line-height: 24px;
+   color: #333;
 }
 
 .searching-hotels {
+   width: 100%;
+   max-width: 568px;
    font-family: "PT Sans", sans-serif;
    font-size: 21px;
    line-height: 26px;
@@ -177,10 +199,10 @@ ul {
    border: none;
 }
 
-/* .form-on-the-map {
-   background-image: url(../images/map.svg);
+.map-wrapp {
+   background-image: url("../images/map.svg");
    background-repeat: no-repeat;
-} */
+}
 
 .parametres {
    font-weight: 700;
@@ -279,6 +301,10 @@ input[type="date"] {
 
 }
 
+.arrow-up-link {
+   text-decoration: none;
+}
+
 .input.input-date:focus {
    background-color: var(--white);
    outline: 2px solid #E5E5E5;
@@ -287,6 +313,7 @@ input[type="date"] {
 .input.input-date:hover {
    background-color: #EBEBEB;
 }
+
 
 
 input[type="number"] {
@@ -309,9 +336,11 @@ input[type="submit"] {
 .date-input {
    margin-top: 0;
    margin-bottom: 30px;
+
 }
 
 .one-third-size {
+   display: flex;
    margin-top: 0;
    margin-bottom: 54px;
 }
@@ -364,10 +393,6 @@ input[type="submit"] {
    outline: 2px;
 }
 
-.social-icon {
-   display: flex;
-   background-color: var(--blue);
-}
 
 .show {
    display: inline-block;
@@ -398,12 +423,85 @@ input[type="submit"] {
 }
 
 .form-wrapper {
-   position: absolute;
    z-index: 1;
    left: 50%;
-   transform: translateX(-50%);
+   transform: 50% 100%;
+}
+
+.form-header-title {
+   margin: 0;
+   margin-bottom: 30px;
 }
 
 .btn {
    cursor: pointer;
+}
+
+
+
+/* footer */
+.page-footer {
+   padding: 36px 0;
+   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.link-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
+   margin-left: 115px;
+}
+
+.social-icons {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.right-side-footer {
+   display: flex;
+   align-items: center;
+   margin-right: 115px;
+}
+
+.visit-SEDONA {
+   margin-bottom: 10px;
+}
+
+.academy-link {
+   margin-left: 10px;
+}
+
+.social-icon {
+   display: block;
+   width: 46px;
+   height: 46px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-color: var(--blue);
+}
+
+.social-item:not(:last-child) {
+   margin-right: 10px;
+}
+
+.twitter {
+   background-image: url("../images/twitter.svg");
+}
+
+.facebook {
+   background-image: url("../images/fb-icon.svg");
+}
+
+.youtube {
+   background-image: url("../images/youtube.svg");
+
 }
