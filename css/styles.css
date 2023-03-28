@@ -115,6 +115,10 @@ ul {
 }
 
 .preview {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    line-height: 26px;
 }
 
@@ -125,25 +129,105 @@ ul {
    color: var(--main);
 }
 
+.reasons-title {
+   margin: 0;
+   margin-bottom: 51px;
+   max-width: 470px;
+   text-align: center;
+}
+
 .reason-title {
    font-size: 21px;
+   margin-top: 0;
+}
+
+.reasons-preview-text {
+   margin: 0;
+   margin-bottom: 51px;
+}
+
+.reasons-1-list {
+   display: flex;
+}
+
+.reasons-1-item {
+   display: flex;
+   flex-direction: column;
+   background-position: center top;
+   background-repeat: no-repeat;
+   background-size: 75px 72px;
+   padding-top: 92px;
+   width: 100%;
+   max-width: 400px;
+   align-items: center;
+}
+
+.house-icon {
+   background-image: url("../images/house-icon.svg");
+}
+
+.burger {
+   background-image: url("../images/burger.svg");
+}
+
+.gift {
+   background-image: url("../images/Gift.svg");
+}
+
+.reasons-1-item-descr {
+   max-width: 254px;
+   text-align: center;
+   text-transform: none;
+   margin-top: 0;
+   margin-bottom: 60px;
 }
 
 .welcome {
+   margin: 0;
+   margin-bottom: 42px;
    background-image: url("../images/background.png");
    background-repeat: no-repeat;
 }
 
-.photo-container {
+.photo-container-1 {
+   margin: 0;
+   margin-bottom: 55px;
+   color: var(--white);
+   background-color: var(--blue);
+}
+
+.photo-container-2 {
+   margin: 0;
+   margin-bottom: 47px;
    color: var(--white);
    background-color: var(--blue);
 }
 
 
 .reason-1-wrapper {
-   background-image: url(../images/house.svg);
+   display: flex;
+   margin-bottom: 60px;
+}
+
+.N-1 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   text-align: center;
+   color: var(--white);
+   width: 400px;
+   height: 256px;
+   background-color: var(--blue);
+}
+
+.reason-1-img {
+   background-position: right;
    background-repeat: no-repeat;
 }
+
+
 
 .reason-2-wrapper {
    background-image: url(../images/mountain.svg);
