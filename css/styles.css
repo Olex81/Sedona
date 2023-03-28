@@ -146,7 +146,8 @@ ul {
    margin-bottom: 51px;
 }
 
-.reasons-1-list {
+.reasons-1-list,
+.reasons-3-4-5-list {
    display: flex;
 }
 
@@ -189,27 +190,14 @@ ul {
    background-repeat: no-repeat;
 }
 
-.photo-container-1 {
-   margin: 0;
-   margin-bottom: 55px;
-   color: var(--white);
-   background-color: var(--blue);
-}
-
-.photo-container-2 {
-   margin: 0;
-   margin-bottom: 47px;
-   color: var(--white);
-   background-color: var(--blue);
-}
-
 
 .reason-1-wrapper {
    display: flex;
    margin-bottom: 60px;
 }
 
-.N-1 {
+.N-1,
+.N-2 {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -230,14 +218,42 @@ ul {
 
 
 .reason-2-wrapper {
-   background-image: url(../images/mountain.svg);
-   background-repeat: no-repeat;
+display: flex;
+flex-direction: row-reverse;
 }
 
-.gray_block {
+
+
+ .gray_block {
    margin: 0;
    background-color: #eee;
-}
+ }
+
+ .reason-3-4-5-item {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   max-width: 400px;
+   align-items: center;
+   padding-top: 47px;
+   padding-bottom: 54px;
+ }
+
+
+ .reason-3-4-5-title {
+   max-width: 119px;
+   text-align: center;
+   font-size: 21px;
+   line-height: 21px;
+   margin-bottom: 25px;
+ }
+
+ .reasons-3-4-5-item-descr {
+   max-width: 207px;
+   text-align: center;
+   margin: 0;
+   margin-top: 23px;
+ }
 
 .white {
    color: var(--white);
