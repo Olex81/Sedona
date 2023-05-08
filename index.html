@@ -18,7 +18,9 @@
   <div class="container">
     <header class="page-header">
       <div class="logo">
-        <img class="logo-item" src="images/logo.svg" width="138" height="70" alt="Sedona" />
+        <a href="/" class="nav-link logo">
+          <img class="logo-item" src="images/logo.svg" width="138" height="70" alt="Sedona" />
+        </a>
       </div>
       <nav>
         <ul class="nav">
@@ -41,7 +43,7 @@
       <section class="welcome">
         <h1 class="visually-hidden">Сайт города Седона</h1>
         <div class="image-wrapper">
-          <img src="images/welcome.svg" width="456" height="350" class="pic" />
+          
         </div>
       </section>
       <section class="reasons">
@@ -51,7 +53,6 @@
         </div>
         <ul class="reasons-list">
           <li class="reasons-item">
-
             <div class="reason-1-wrapper">
               <div class="N-1">
                 <h3 class="title reason-title white">НАСТОЯЩЙ ГОРОДОК</h3>
@@ -62,7 +63,8 @@
                 <img src="images/building.svg" alt="building" class="img-1-reason">
               </div>
             </div>
-
+  
+      
             <ul class="reasons-1-list">
               <li class="reasons-1-item house-icon">
                 <h3 class="title reason-title">Жильё</h3>
@@ -89,25 +91,24 @@
                 <img src="images/mountain.svg" alt="mountain" class="img-2-reason">
               </div>
           </li>
-        </ul>
-        <div class="gray_block">
-          <ul class="reasons-3-4-5-list">
-            <li class="reason-3-4-5-item">
+
+          <div class="gray_block">
+            <li class="reasons-item reason-3-4-5-item">
               <h3 class="title reason-title reason-3-4-5-title">небольшая площадь</h3>
               <span>— №3 —</span>
               <p class="reasons-3-4-5-item-descr">все достопримечательности находятся очень близко</p>
             </li>
-            <li class="reason-3-4-5-item">
+            <li class="reasons-item reason-3-4-5-item">
               <h3 class="title reason-title reason-3-4-5-title">красивая дорога</h3>
               <span>— №4 —</span>
               <p class="reasons-3-4-5-item-descr">ехать в седону из лас-вегаса совсем не скучно!</p>
             </li>
-            <li class="reason-3-4-5-item">
+            <li class="reasons-item reason-3-4-5-item">
               <h3 class="title reason-title reason-3-4-5-title">мало туристов</h3>
               <span>— №5 —</span>
               <p class="reasons-3-4-5-item-descr">большинство едет в гранд каньон и толпится там</p>
             </li>
-        </div>
+          </div>
         </ul>
       </section>
 
@@ -130,7 +131,7 @@
         <div class="map-wrapp">
           <form action="https://echo.htmlacademy.ru/courses" method="post">
             <fieldset class="form-group">
-              <div class="parametres">
+              <!-- <div class="parametres"> -->
                 <div class="date-input">
                   <label for="date">ДАТА ЗАЕЗДА:</label>
                   <input type="date" name="date" class="input input-date" />
@@ -142,16 +143,16 @@
                 <div class="one-third-size">
                   <label for="adults">ВЗРОСЛЫЕ:</label>
                   <button type="button" class="adults btn">+</button>
-                  <input type="number" id="adults" name="adults" class="input" />
+                  <input type="number" id="adults" name="adults" class="input input-age" />
                   <button type="button" class="adults btn">-</button>
                   <label for="kids">ДЕТИ</label>
                   <button type="button" class="kids btn">+</button>
-                  <input type="number" id="kids" name="kids" class="input" />
-                  <button type="button" class="kids btn">-</button>
+                  <input type="number" id="kids" name="kids" class="input input-age" />
+                  <button type="button" class="kids-btn btn">-</button>
                 </div>
                 <div>
                   <input class="searching-hotels blue input btn" type="submit" value="НАЙТИ" />
-                </div>
+                <!-- </div> -->
             </fieldset>
           </form>
 
