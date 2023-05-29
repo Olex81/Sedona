@@ -22,18 +22,21 @@
           <img class="logo-item" src="images/logo.svg" width="138" height="70" alt="Sedona" />
         </a>
       </div>
-      <nav>
-        <ul class="nav">
-          <li class="nav-item">
+      <nav class="nav-block">
+        <ul class="nav_list nav_list_left">
+          <li class="nav-item nav-item_left">
             <a class="nav-link active info" href="#">ИНФОРМАЦИЯ</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ФОТО И ВИДЕО</a>
+          <li class="nav-item nav-item_left">
+            <a class="nav-link" href="#">ФОТО&nbsp;И&nbsp;ВИДЕО</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">КАРТА ШТАТА</a>
+        </ul>
+
+        <ul class="nav_list nav_list_right">
+          <li class="nav-item nav-item_right">
+            <a class="nav-link" href="#">КАРТА&nbsp;ШТАТА</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-item_right">
             <a class="nav-link" href="/hotels.html">ГОСТИНИЦЫ</a>
           </li>
         </ul>
@@ -43,7 +46,7 @@
       <section class="welcome">
         <h1 class="visually-hidden">Сайт города Седона</h1>
         <div class="image-wrapper">
-          
+
         </div>
       </section>
       <section class="reasons">
@@ -63,8 +66,7 @@
                 <img src="images/building.svg" alt="building" class="img-1-reason">
               </div>
             </div>
-  
-      
+
             <ul class="reasons-1-list">
               <li class="reasons-1-item house-icon">
                 <h3 class="title reason-title">Жильё</h3>
@@ -90,25 +92,25 @@
               <div class="reason-2-img">
                 <img src="images/mountain.svg" alt="mountain" class="img-2-reason">
               </div>
+            </li>
+          
+          
+          <li class="reasons-item reason-3-4-5-item reasons_last">
+            <h3 class="title reason-title reason-3-4-5-title">небольшая площадь</h3>
+            <span>— №3 —</span>
+            <p class="reasons-3-4-5-item-descr">все достопримечательности находятся очень близко</p>
           </li>
-
-          <div class="gray_block">
-            <li class="reasons-item reason-3-4-5-item">
-              <h3 class="title reason-title reason-3-4-5-title">небольшая площадь</h3>
-              <span>— №3 —</span>
-              <p class="reasons-3-4-5-item-descr">все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="reasons-item reason-3-4-5-item">
-              <h3 class="title reason-title reason-3-4-5-title">красивая дорога</h3>
-              <span>— №4 —</span>
-              <p class="reasons-3-4-5-item-descr">ехать в седону из лас-вегаса совсем не скучно!</p>
-            </li>
-            <li class="reasons-item reason-3-4-5-item">
-              <h3 class="title reason-title reason-3-4-5-title">мало туристов</h3>
-              <span>— №5 —</span>
-              <p class="reasons-3-4-5-item-descr">большинство едет в гранд каньон и толпится там</p>
-            </li>
-          </div>
+          <li class="reasons-item reason-3-4-5-item reasons_last">
+            <h3 class="title reason-title reason-3-4-5-title">красивая дорога</h3>
+            <span>— №4 —</span>
+            <p class="reasons-3-4-5-item-descr">ехать в седону из лас-вегаса совсем не скучно!</p>
+          </li>
+          <li class="reasons-item reason-3-4-5-item reasons_last">
+            <h3 class="title reason-title reason-3-4-5-title">мало туристов</h3>
+            <span>— №5 —</span>
+            <p class="reasons-3-4-5-item-descr">большинство едет в гранд каньон и толпится там</p>
+          </li>
+          
         </ul>
       </section>
 
@@ -131,28 +133,28 @@
         <div class="map-wrapp">
           <form action="https://echo.htmlacademy.ru/courses" method="post">
             <fieldset class="form-group">
-              <!-- <div class="parametres"> -->
-                <div class="date-input">
-                  <label for="date">ДАТА ЗАЕЗДА:</label>
-                  <input type="date" name="date" class="input input-date" />
-                </div>
-                <div class="date-input">
-                  <label for="date-exit">ДАТА ВЫЕЗДА:</label>
-                  <input type="date" name="date-exit" class="input input-date" />
-                </div>
-                <div class="one-third-size">
-                  <label for="adults">ВЗРОСЛЫЕ:</label>
-                  <button type="button" class="adults btn">+</button>
-                  <input type="number" id="adults" name="adults" class="input input-age" />
-                  <button type="button" class="adults btn">-</button>
-                  <label for="kids">ДЕТИ</label>
-                  <button type="button" class="kids btn">+</button>
-                  <input type="number" id="kids" name="kids" class="input input-age" />
-                  <button type="button" class="kids-btn btn">-</button>
-                </div>
-                <div>
-                  <input class="searching-hotels blue input btn" type="submit" value="НАЙТИ" />
-                <!-- </div> -->
+
+              <div class="date-input">
+                <label for="date">ДАТА ЗАЕЗДА:</label>
+                <input type="date" name="date" class="input input-date" />
+              </div>
+              <div class="date-input">
+                <label for="date-exit">ДАТА ВЫЕЗДА:</label>
+                <input type="date" name="date-exit" class="input input-date" />
+              </div>
+              <div class="one-third-size">
+                <label for="adults">ВЗРОСЛЫЕ:</label>
+                <button type="button" class="adults btn">+</button>
+                <input type="number" id="adults" name="adults" class="input input-age" />
+                <button type="button" class="adults btn">-</button>
+                <label for="kids">ДЕТИ</label>
+                <button type="button" class="kids btn">+</button>
+                <input type="number" id="kids" name="kids" class="input input-age" />
+                <button type="button" class="kids-btn btn">-</button>
+              </div>
+              <div>
+                <input class="searching-hotels blue input btn" type="submit" value="НАЙТИ" />
+
             </fieldset>
           </form>
 
