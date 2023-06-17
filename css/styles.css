@@ -363,6 +363,7 @@ ul {
    background-image: url("../images/map.svg");
    background-repeat: no-repeat;
    height: 594px;
+   position: relative;
 }
 
 
@@ -454,7 +455,7 @@ input[type="date"] {
    width: 100%;
    max-width: 346px;
    height: 38px;
-  
+
 
 }
 
@@ -510,6 +511,7 @@ input[type="submit"] {
    align-items: center;
    margin-top: 0;
    margin-bottom: 54px;
+
 }
 
 .small-button {
@@ -537,20 +539,26 @@ input[type="submit"] {
 }
 
 
-.adults,.kids {
+.adults,
+.kids {
    border: none;
    background: transparent;
    color: #a9a9a9;
 }
 
 .label {
+   font-size: 14px;
    line-height: 26px;
    font-weight: 700;
    width: 100%;
    max-width: 125px;
-   padding-right: 15px;
+   padding-right: 13px;
 }
 
+
+/* .label-kids {
+   margin-left: 55px;
+} */
 
 .searching-hotels {
    width: 100%;
@@ -664,14 +672,18 @@ input[type="submit"] {
 
 /* footer */
 .page-footer {
-   padding: 36px 0;
+   position: relative;
+   top: 80%;
+   min-height: 120px;
+   padding: 20px 0;
    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-container {
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   padding-left: 120px;
+   padding-right: 139px;
 }
 
 .link-wrapper {
@@ -679,19 +691,20 @@ input[type="submit"] {
    flex-wrap: wrap;
    flex-direction: column;
    align-items: center;
-   margin-left: 115px;
 }
 
 .social-icons {
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   margin: 0 auto;
+   padding-top: 7px;
+   padding-right: 5px;
 }
 
 .right-side-footer {
    display: flex;
    align-items: center;
-   margin-right: 115px;
+   padding-top: 12px;
 }
 
 .visit-SEDONA {
@@ -708,10 +721,10 @@ input[type="submit"] {
    background-color: var(--blue);
    width: 46px;
    height: 48px;
-   
+
 }
 
 
 .social-item:not(:last-child) {
-   margin-right: 10px;
+   margin-right: 5px;
 }
