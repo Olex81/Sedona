@@ -98,7 +98,7 @@
         <div class="sortingby-block">
           <h2 class="sortingby-title">НАЙДЕНО: 3</h2>
           <div class="sortingby">СОРТИРОВКА:
-            <button class="button link price" href="#">ПО ЦЕНЕ</button>
+            <button class="button link active-button" href="#">ПО ЦЕНЕ</button>
             <button class="button link" href="#">ПО ТИПУ</button>
             <button class="button link" href="#">ПО РЕЙТИНГУ</button>
           </div>
@@ -106,16 +106,13 @@
             <button class="arrow-wrapper_button">
               <svg class="arrow-up-icon" width="11" height="10" viewBox="0 0 11 10" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
+                <path d="M5.5 0L0 10H11L5.5 0Z" fill="currentColor" />
               </svg>
             </button>
-
-
-
-            <button class="arrow-wrapper_button" href="#">
+            <button class="arrow-wrapper_button active-arrow" href="#">
               <svg class="arrow-down-icon" width="11" height="10" viewBox="0 0 11 10" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 10L0 0H11" fill="#CACACA" />
+                <path d="M5.5 10L0 0H11" fill="currentColor" />
               </svg>
             </button>
 
@@ -126,14 +123,14 @@
           <li class="hotel flex">
 
             <div class="wrapper-hotels">
-              <img src="/images/Rock.png" alt="Rock">
+              <img class="hotels-img" src="/images/Rock.png" alt="Rock">
             </div>
             <div class="left-side-card">
               <h3 class="hotels-header">Amara Resort &amp;&nbsp;Spa</h3>
-               <div class="hotels-card_text_wrapper flex">
-                 <p class="hotels-card_text">ГОСТИНИЦА</p>
-                 <p class="hotels-card_text hotels-card_price">ОТ 4000 Р.</p>
-               </div>
+              <div class="hotels-card_text_wrapper flex">
+                <p class="hotels-card_text">ГОСТИНИЦА</p>
+                <p class="hotels-card_text hotels-card_price">ОТ 4000 Р.</p>
+              </div>
               <div class="hotels-card_button_wrapper flex">
                 <button class="button blue btn cards-button">ПОДРОБНЕЕ</button>
                 <button class="button btn cards-button">ЗАБРОНИРОВАТЬ</button>
@@ -152,35 +149,55 @@
           </li>
           <li class="hotel flex">
             <div class="wrapper-hotels">
-              <img src="/images/ROad.png" alt="Road">
+              <img class="hotels-img" src="/images/ROad.png" alt="Road">
             </div>
-            <h3 class="hotels-header">Desert Quail Inn</h3>
-            <img src="images/star.svg" alt="рейтинг отеля 3 из 5">
-            <img src="images/star.svg">
-            <img src="images/star.svg">
-            <p>МОТЕЛЬ</p>
-            <p>ОТ 3000 Р.</p>
-            <button class="button blue btn">ПОДРОБНЕЕ</button>
-            <button class="button btn">ЗАБРОНИРОВАТЬ</button>
-            <button class="rating btn">РЕЙТИНГ: 8,9</button>
+            <div class="left-side-card">
+              <h3 class="hotels-header">Desert Quail Inn</h3>
+              <div class="hotels-card_text_wrapper flex">
+                <p class="hotels-card_text">МОТЕЛЬ</p>
+                <p class="hotels-card_text hotels-card_price">ОТ 3000 Р.</p>
+              </div>
+              <div class="hotels-card_button_wrapper flex">
+                <button class="button blue btn cards-button">ПОДРОБНЕЕ</button>
+                <button class="button btn cards-button">ЗАБРОНИРОВАТЬ</button>
+              </div>
+            </div>
+            <div class="right-side_card">
+              <div class="stars-img-group">
+                <img src="images/star.svg" alt="рейтинг отеля 3 из 5">
+                <img src="images/star.svg">
+                <img src="images/star.svg">
+              </div>
+              <button class="rating btn">РЕЙТИНГ: 8,9</button>
+            </div>
           </li>
           <li class="hotel flex">
             <div class="wrapper-hotels">
-              <img src="/images/Nature.png" alt="Nature">
+              <img class="hotels-img" src="/images/Nature.png" alt="Nature">
             </div>
-            <h3 class="hotels-header">Villas at Poco Diablo</h3>
-            <img src="images/star.svg" alt="рейтинг отеля 2 из 5">
-            <img src="images/star.svg">
-            <p>АПАРТАМЕНТЫ</p>
-            <p>ОТ 2000 Р.</p>
-            <button class="button blue btn">ПОДРОБНЕЕ</button>
-            <button class="button btn">ЗАБРОНИРОВАТЬ</button>
-            <button class="rating btn">РЕЙТИНГ: 9,2</button>
+            <div class="left-side-card">
+              <h3 class="hotels-header">Villas at Poco Diablo</h3>
+              <div class="hotels-card_text_wrapper flex">
+                <p class="hotels-card_text">АПАРТАМЕНТЫ</p>
+                <p class="hotels-card_text hotels-card_price">ОТ 2000 Р.</p>
+              </div>
+              <div class="hotels-card_button_wrapper flex">
+                <button class="button blue btn cards-button">ПОДРОБНЕЕ</button>
+                <button class="button btn cards-button">ЗАБРОНИРОВАТЬ</button>
+              </div>
+            </div>
+            <div class="right-side_card">
+              <div class="stars-img-group">
+                <img src="images/star.svg" alt="рейтинг отеля 2 из 5">
+                <img src="images/star.svg">
+              </div>
+              <button class="rating btn">РЕЙТИНГ: 9,2</button>
+            </div>
           </li>
         </ul>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer footer-hotels_page">
       <div class="footer-container">
         <div class="link-wrapper">
           <div class="visit-SEDONA">#visitSEDONA</div>
