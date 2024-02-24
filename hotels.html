@@ -47,41 +47,44 @@
           <div class="choice-item-block infrastructure-block">
             <h2 class="white-header">ИНФРАСТРУКТУРА:</h2>
             <div class="pool">
-              <input type="checkbox" checked id="pool" name="infra" value="pool" class="input visually-hidden">
-              <label for="pool">БАССЕЙН</label>
+              <input type="checkbox" checked id="pool" name="infra" value="pool"
+                class="checkbox-filter visually-hidden">
+              <label for="pool" class="label-checkbox">БАССЕЙН</label>
             </div>
             <div class="parking">
-              <input type="checkbox" id="parking" name="infra" value="parking" class="input visually-hidden">
-              <label for="parking">ПАРКОВКА</label>
+              <input type="checkbox" id="parking" name="infra" value="parking" class="checkbox-filter visually-hidden">
+              <label for="parking" class="label-checkbox">ПАРКОВКА</label>
             </div>
             <div class="wi-fi">
-              <input type="checkbox" id="wi-fi" name="infra" value="wi-fi" class="input visually-hidden">
-              <label for="wi-fi">WI-FI</label>
+              <input type="checkbox" id="wi-fi" name="infra" value="wi-fi" class="checkbox-filter visually-hidden">
+              <label for="wi-fi" class="label-checkbox">WI-FI</label>
             </div>
           </div>
           <div class="choice-item-block apartman-block">
             <h2 class="white-header">ТИП ЖИЛЬЯ:</h2>
-            <div class="hotel">
-              <input type="checkbox" checked id="hotel" name="living-place" value="hotel" class="input visually-hidden">
-              <label for="hotel">ГОСТИНИЦА</label>
+            <div class="placement">
+              <input type="checkbox" checked id="hotel" name="living-place" value="hotel"
+                class="checkbox-filter visually-hidden">
+              <label for="hotel" class="label-checkbox">ГОСТИНИЦА</label>
             </div>
-            <div class="motel">
-              <input type="checkbox" checked id="motel" name="living-place" value="motel" class="input visually-hidden">
-              <label for="motel">МОТЕЛЬ</label>
+            <div class="placement">
+              <input type="checkbox" checked id="motel" name="living-place" value="motel"
+                class="checkbox-filter visually-hidden">
+              <label for="motel" class="label-checkbox">МОТЕЛЬ</label>
             </div>
-            <div class="apartman">
+            <div class="placement">
               <input type="checkbox" checked id="apartman" name="living-place" value="apartman"
-                class="input visually-hidden">
-              <label for="apartman">АПАРТАМЕНТЫ</label>
+                class="checkbox-filter visually-hidden">
+              <label for="apartman" class="label-checkbox">АПАРТАМЕНТЫ</label>
             </div>
           </div>
           <div class="choice-item-block price-block">
             <h2 class="white-header">СТОИМОСТЬ В СУТКИ (Р):</h2>
             <div class="numberbuttons">
-              <label for="from-0">ОТ</label>
               <input type="number" id="from-0" min="0" max="3000" step="1" value="0" class="input input-nmbr">
-              <label for="till3000">ДО</label>
+              <label for="from-0" class="label-price">ОТ</label>
               <input type="number" id="till3000" min="0" max="3000" step="1" value="3000" class="input input-nmbr">
+              <label for="till3000" class="label-price">ДО</label>
             </div>
             <div class="price_per_day">
               <input class="range" type="range" id="price" name="price" min="1" max="3000" step="1">
@@ -98,9 +101,9 @@
         <div class="sortingby-block">
           <h2 class="sortingby-title">НАЙДЕНО: 3</h2>
           <div class="sortingby">СОРТИРОВКА:
-            <button class="button link active-button" href="#">ПО ЦЕНЕ</button>
-            <button class="button link" href="#">ПО ТИПУ</button>
-            <button class="button link" href="#">ПО РЕЙТИНГУ</button>
+            <button class="button link type-btn active-button" href="#">ПО ЦЕНЕ</button>
+            <button class="button link type-btn" href="#">ПО ТИПУ</button>
+            <button class="button link type-btn" href="#">ПО РЕЙТИНГУ</button>
           </div>
           <div class="arrows-buttons">
             <button class="arrow-wrapper_button">
@@ -126,7 +129,7 @@
               <img class="hotels-img" src="/images/Rock.png" alt="Rock">
             </div>
             <div class="left-side-card">
-              <h3 class="hotels-header">Amara Resort &amp;&nbsp;Spa</h3>
+              <a href="#" class="hotels-header">Amara Resort &amp;&nbsp;Spa</a>
               <div class="hotels-card_text_wrapper flex">
                 <p class="hotels-card_text">ГОСТИНИЦА</p>
                 <p class="hotels-card_text hotels-card_price">ОТ 4000 Р.</p>
@@ -152,7 +155,7 @@
               <img class="hotels-img" src="/images/ROad.png" alt="Road">
             </div>
             <div class="left-side-card">
-              <h3 class="hotels-header">Desert Quail Inn</h3>
+              <a class="hotels-header" href="#">Desert Quail Inn</a>
               <div class="hotels-card_text_wrapper flex">
                 <p class="hotels-card_text">МОТЕЛЬ</p>
                 <p class="hotels-card_text hotels-card_price">ОТ 3000 Р.</p>
@@ -176,7 +179,7 @@
               <img class="hotels-img" src="/images/Nature.png" alt="Nature">
             </div>
             <div class="left-side-card">
-              <h3 class="hotels-header">Villas at Poco Diablo</h3>
+              <a class="hotels-header" href="#">Villas at Poco Diablo</a>
               <div class="hotels-card_text_wrapper flex">
                 <p class="hotels-card_text">АПАРТАМЕНТЫ</p>
                 <p class="hotels-card_text hotels-card_price">ОТ 2000 Р.</p>
