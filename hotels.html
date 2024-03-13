@@ -80,14 +80,24 @@
           </div>
           <div class="choice-item-block price-block">
             <h2 class="white-header">СТОИМОСТЬ В СУТКИ (Р):</h2>
-            <div class="numberbuttons">
-              <input type="number" id="from-0" min="0" max="3000" step="1" value="0" class="input input-nmbr">
-              <label for="from-0" class="label-price">ОТ</label>
-              <input type="number" id="till3000" min="0" max="3000" step="1" value="3000" class="input input-nmbr">
-              <label for="till3000" class="label-price">ДО</label>
+            <div class="numberbuttons flex">
+              <div class="nubberbuttons_block flex">
+                <label for="from-0" class="label-price">ОТ</label>
+                <input type="number" id="from-0" min="0" max="3000" step="1" value="0" class="input input-nmbr">
+              </div>
+              <div class="numberbuttons_block flex">
+                <label for="till3000" class="label-price">ДО</label>
+                <input type="number" id="till3000" min="0" max="3000" step="1" value="3000" class="input input-nmbr">
+              </div>
+
             </div>
-            <div class="price_per_day">
-              <input class="range" type="range" id="price" name="price" min="1" max="3000" step="1">
+            <div class="slider">
+              <div class="progress"></div>
+            </div>
+            <div class="range-input">
+              <input class="range range-min" type="range" id="price" name="price" min="0" max="4000" step="1" value="0">
+              <input class="range range-max" type="range" id="price" name="price" min="0" max="4000" step="1"
+                value="3000">
             </div>
             <div class="submit">
               <input class="show" type="submit" value="ПОКАЗАТЬ">

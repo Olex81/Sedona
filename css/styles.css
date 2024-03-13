@@ -174,7 +174,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 42px;
+  padding-top: 36px;
   line-height: 26px;
 }
 
@@ -222,7 +222,7 @@ ul {
   background-position: center 60px;
   background-repeat: no-repeat;
   background-size: 75px 72px;
-  padding-top: 160px;
+  padding-top: 156px;
   padding-bottom: 85px;
   width: calc(100% / 3);
   max-width: 400px;
@@ -409,10 +409,11 @@ ul {
 }
 
 .white-header {
+  align-self: flex-start;
   font-size: 16px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 
 .hotels-header {
@@ -474,7 +475,7 @@ ul {
 
 
 
-.checkbox-filter:checked +.label-checkbox::before {
+.checkbox-filter:checked+.label-checkbox::before {
   content: "";
   display: block;
   position: absolute;
@@ -489,7 +490,7 @@ ul {
 }
 
 
-.checkbox-filter:checked +.label-checkbox::after {
+.checkbox-filter:checked+.label-checkbox::after {
   content: "";
   display: block;
   position: absolute;
@@ -504,6 +505,7 @@ ul {
 
 .price-block {
   margin-left: auto;
+  align-items: center;
 }
 
 .label-price {
@@ -512,16 +514,90 @@ ul {
   cursor: pointer;
 }
 
-.label-price::before {
-  content: "";
-  display: block;
-  position: absolute;
+.numberbuttons {
+  position: relative;
+  justify-content: space-around;
   width: 317px;
   height: 36px;
-  top: 114px;
-  border: 2px solid var(--white);
-  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  margin-bottom: 20px;
 }
+
+.numberbuttons::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  left: 50%;
+  background-color: var(--white);
+}
+
+.numberbuttons_block {
+  justify-content: center;
+}
+
+.input-nmbr {
+  width: 35px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: var(--white);
+  text-align: center;
+}
+
+.slider {
+  width: 100%;
+  max-width: 316px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+.slider .progress {
+  width: 248px;
+  height: 2px;
+  right: 22%;
+  position: absolute;
+  background: #fff;
+}
+
+.range-input {
+  position: relative;
+  margin-bottom: 33px;
+  width: 100%;
+  /* max-width: 316px; */
+}
+
+.range {
+  position: absolute;
+  top: -2px;
+  height: 2px;
+  width: 100%;
+  appearance: none;
+  background: none;
+  outline: none;
+  pointer-events: none;
+}
+
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 19px;
+  height: 21px;
+  background: url("../images/filter-button.svg");
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* спросить про -moz-range-thumb */
+
+.range::-webkit-slider-thumb:hover {
+  transform: scale(1.2) translate(-1px -1px);
+}
+
+
 
 .button {
   padding: 3px 17px;
